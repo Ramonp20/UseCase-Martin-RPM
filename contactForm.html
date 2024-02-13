@@ -1,0 +1,7 @@
+<template>
+    <template for:each={fieldValues} for:item="field"> 
+        <lightning-input 
+            key={field.fieldName} label={field.fieldName} value={field.value}
+            onchange={handleFieldChange}>  </lightning-input>
+    </template> 
+</template>
